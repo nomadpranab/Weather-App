@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Minimal Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+  <body class=" min-h-screen flex items-center justify-center" style="background-image: url('img/abstract-envelope.svg');">
+    <main class="w-full max-w-md mx-auto p-6 rounded-xl shadow-lg" style="background-image: url('https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover;">
+      <h1 class="text-2xl font-semibold text-black   text-center mb-7">WeatherSphere 🌥️</h1>
+      <form class="flex gap-2" id="weather-form">
+        <input type="text" placeholder="Enter city" id="city-input" class="flex-1 px-3 py-2 bg-gray-100 text-gray-900 rounded-md outline-none placeholder-gray-400" />
+        <button type="submit" class="px-4 py-2 rounded-md bg-gray-50 text-gray-900 font-bold hover:bg-yellow-300 transition hover:text-black">Check</button>
+      </form>
+      <section class="mt-8 grid grid-cols-2 gap-4 text-gray-300" id="weather">
+        <div class="bg-gray-700/60 rounded-lg p-4">
+          <div class="text-sm">Temp</div>
+          <div class="text-xl font-bold">--°C</div>
+        </div>
+        <div class="bg-gray-700/60 rounded-lg p-4">
+          <div class="text-sm">Feels Like</div>
+          <div class="text-lg">--°C</div>
+        </div>
+        <div class="bg-gray-700/60 rounded-lg p-4">
+          <div class="text-sm">Humidity</div>
+          <div class="text-lg">--%</div>
+        </div>
+        <div class="bg-gray-700/60 rounded-lg p-4">
+          <div class="text-sm">Wind</div>
+          <div class="text-lg">-- km/h</div>
+        </div>
+        <div class="bg-gray-700/60 rounded-lg p-4">
+          <div class="text-sm">Cloud Cover</div>
+          <div class="text-lg">--</div>
+        </div>
+        <div class="bg-gray-700/60 rounded-lg p-4">
+          <div class="text-sm">Wind Direction</div>
+          <div class="text-lg">--</div>
+        </div>
+        <div class="bg-gray-700/60 rounded-lg p-4">
+          <div class="text-sm">UV</div>
+          <div class="text-lg">--</div>
+        </div>
+        <div class="bg-gray-700/60 rounded-lg p-4">
+          <div class="text-sm">Precipitation</div>
+          <div class="text-lg">--</div>
+        </div>
+        
+      </section>
+    </main>
+    <script src="weather.js"></script>
+  </body>
+</html>
